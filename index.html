@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="top">
+        <p>SELAMAT ULANG TAHUN</p>
+      </div>
+
+      <div class="content">
+        <h1>Hello <span>Jhon</span></h1>
+        <p>Hari ini adalah hari spesialmu, dan aku ingin mengucapkan terima kasih karena telah menjadi teman yang luar biasa.</p>
+        <p>Semoga kebahagiaan, kesehatan, dan kesuksesan selalu menyertai langkahmu. Selamat merayakan hari yang indah ini, dan jangan lupa bahwa aku selalu mendukungmu di setiap langkah hidupmu.</p>
+
+        <a href="#" class="btn" id="playAudio">KLIK2x</a>
+      </div>
+    </div>
+    <audio id="myAudio" controls loop>
+      <source src="playmusic.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+      const audio = document.getElementById("myAudio");
+      const button = document.getElementById("playAudio");
+
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        audio.play();
+
+        document.getElementById("playAudio").addEventListener("click", function () {
+          document.querySelector(".confetti-container").style.display = "flex";
+        });
+      });
+    </script>
+    <div class="confetti-container">
+      <div class="confetti">
+        <i style="--speed: 10; --bg: yellow" class="square"></i>
+        <i style="--speed: 18; --bg: white" class="pentagram"></i>
+        <i style="--speed: 29; --bg: green" class="rectangle"></i>
+        <i style="--speed: 17; --bg: blue" class="hexagram"></i>
+        <i style="--speed: 33; --bg: red" class="pentagram"></i>
+        <i style="--speed: 26; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 24; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 5; --bg: blue" class="wavy-line"></i>
+        <i style="--speed: 40; --bg: white" class="square"></i>
+        <i style="--speed: 17; --bg: green" class="rectangle"></i>
+        <i style="--speed: 25; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 15; --bg: yellow" class="wavy-line"> </i>
+        <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+        <i style="--speed: 25; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 37; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 23; --bg: pink" class="wavy-line"></i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 37; --bg: pink" class="wavy-line"></i>
+        <i style="--speed: 36; --bg: white" class="hexagram"></i>
+        <i style="--speed: 32; --bg: green" class="wavy-line"></i>
+        <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+        <i style="--speed: 29; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 30; --bg: pink" class="rectangle"></i>
+        <i style="--speed: 30; --bg: red" class="square"></i>
+        <i style="--speed: 18; --bg: red" class="pentagram"></i>
+        <i style="--speed: 19; --bg: green" class="rectangle"></i>
+        <i style="--speed: 16; --bg: blue" class="hexagram"></i>
+        <i style="--speed: 23; --bg: red" class="pentagram"></i>
+        <i style="--speed: 34; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 39; --bg: pink" class="wavy-line"></i>
+        <i style="--speed: 40; --bg: purple" class="square"></i>
+        <i style="--speed: 21; --bg: green" class="rectangle"></i>
+        <i style="--speed: 14; --bg: white" class="square"></i>
+        <i style="--speed: 38; --bg: green" class="rectangle"></i>
+        <i style="--speed: 19; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 29; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 21; --bg: white" class="hexagram"></i>
+        <i style="--speed: 17; --bg: purple" class="wavy-line"></i>
+        <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+        <i style="--speed: 23; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 48; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 38; --bg: pink" class="rectangle"></i>
+        <i style="--speed: 13; --bg: red" class="pentagram"></i>
+        <i style="--speed: 49; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 19; --bg: cyan" class="wavy-line"></i>
+        <i style="--speed: 15; --bg: steelblue" class="square"></i>
+        <i style="--speed: 10; --bg: yellow" class="square"></i>
+        <i style="--speed: 18; --bg: white" class="pentagram"></i>
+        <i style="--speed: 29; --bg: green" class="rectangle"></i>
+        <i style="--speed: 17; --bg: blue" class="hexagram"></i>
+        <i style="--speed: 33; --bg: red" class="pentagram"></i>
+        <i style="--speed: 26; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 24; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 5; --bg: white" class="wavy-line"></i>
+        <i style="--speed: 40; --bg: purple" class="square"></i>
+        <i style="--speed: 17; --bg: green" class="rectangle"></i>
+        <i style="--speed: 25; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 15; --bg: cyan" class="wavy-line"> </i>
+        <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+        <i style="--speed: 45; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 37; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 26; --bg: white" class="hexagram"></i>
+        <i style="--speed: 32; --bg: cyan" class="wavy-line"></i>
+        <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+        <i style="--speed: 45; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 50; --bg: pink" class="rectangle"></i>
+        <i style="--speed: 30; --bg: red" class="square"></i>
+        <i style="--speed: 18; --bg: red" class="pentagram"></i>
+        <i style="--speed: 19; --bg: green" class="rectangle"></i>
+        <i style="--speed: 16; --bg: blue" class="hexagram"></i>
+        <i style="--speed: 23; --bg: red" class="pentagram"></i>
+        <i style="--speed: 33; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 39; --bg: white" class="wavy-line"></i>
+        <i style="--speed: 40; --bg: orange" class="square"></i>
+        <i style="--speed: 21; --bg: green" class="rectangle"></i>
+        <i style="--speed: 14; --bg: white" class="square"></i>
+        <i style="--speed: 38; --bg: green" class="rectangle"></i>
+        <i style="--speed: 19; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 29; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 34; --bg: white" class="hexagram"></i>
+        <i style="--speed: 17; --bg: indigo" class="wavy-line"></i>
+        <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+        <i style="--speed: 23; --bg: white" class="square"></i>
+        <i style="--speed: 18; --bg: green" class="rectangle"></i>
+        <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+        <i style="--speed: 48; --bg: pink" class="wavy-line"> </i>
+        <i style="--speed: 38; --bg: pink" class="rectangle"></i>
+        <i style="--speed: 13; --bg: red" class="pentagram"></i>
+        <i style="--speed: 49; --bg: yellow" class="dodecagram"></i>
+        <i style="--speed: 19; --bg: purple" class="wavy-line"></i>
+        <i style="--speed: 15; --bg: cyan" class="square"></i>
+      </div>
+    </div>
+  </body>
+</html>
